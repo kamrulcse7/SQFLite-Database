@@ -72,9 +72,11 @@ class _AddContactState extends State<AddContact> {
   TextField _buildTextField(TextEditingController _controller, String hint) {
     return TextField(
       controller: _controller,
+      // maxLines:10,
       decoration: InputDecoration(
           labelText: hint,
           hintText: hint,
+          
           border:
               OutlineInputBorder(borderRadius: BorderRadius.circular(15.0))),
     );
